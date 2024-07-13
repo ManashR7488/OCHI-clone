@@ -3,6 +3,6 @@
 This is a clone app of ochi using react.
 
 
-- you can see the app [here](https://localhost:5173) <br>
+- you can see the app [here](https://ochiclonemr2.netlify.app/) <br>
 or
--  you can see the app [here](https://localhost:5173)
+-  you can see the app [here](https://ochiclonemr2.vercel.app/)
