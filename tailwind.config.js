@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      Founder:['FounderSemibold'],
+      NewMontreal : ['NeueMontreal']
+    },
   },
   plugins: [],
 }

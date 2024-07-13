@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'FounderSemibold';
+        src: url(/public/fonts/FoundersGrotesk-Semibold.woff2);
+    }
+    @font-face {
+        font-family: 'NeueMontreal';
+        src: url(/public/fonts/NeueMontreal-Regular.woff2);
+    }
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
