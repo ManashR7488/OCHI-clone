@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 const Eye = ({text, eyeColor, eyeBollColor, reference}) => {
 
     const circle = useRef(null);
-  console.log(reference.current);
     const [rotate, setRotate] = useState(0)
     const [xP, setXP] = useState(0)
     const [yP, setYP] = useState(0)

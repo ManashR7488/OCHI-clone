@@ -1,8 +1,9 @@
 import React from "react";
+import NavbarTextAnimation from "../textAnimations/NavbarTextAnimation";
 
 const NavBar = () => {
   return (
-    <div className="fixed z-[999] backdrop-blur-[4px] top-0 left-0 w-full px-[3.25rem] py-4 flex justify-between items-center font-NewMontreal ">
+    <div data-scroll-section className="fixed z-[999] backdrop-blur-[4px] top-0 left-0 w-full px-[3.25rem] py-4 flex justify-between items-center font-NewMontreal ">
       <div className="logo">
       <svg
         width="72"
@@ -35,7 +36,9 @@ const NavBar = () => {
       </div>
       <div className="links flex gap-8 items-center">
         {["Services", "Our Work", "About Us", "Insights", "Contact Us"].map((link, idx)=> (
-            <a key={idx} className={`text-md font-light capitalize ${idx === 4 && "ml-[240px]"}`} href={`/${link}`}>{link}</a>
+            <a key={idx} className={`text-md font-light overflow-hidde capitalize ${idx === 4 && "ml-[240px]"}`} href={`/${link}`}>
+              <NavbarTextAnimation text={link} id={`navLinkText${idx}`} />
+            </a>
         ))}
       </div>
     </div>

@@ -6,13 +6,17 @@ import About from './components/About/About'
 import Eyes from './components/Eyes/EyesContainer'
 import Featured from './components/Featured/Featured'
 import locomotiveScroll from 'locomotive-scroll'
+import "./Loco.css"
 
 const App = () => {
   
-  const locomotive = new locomotiveScroll();
+  const scroll = new locomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
 
   return (
-    <div className='w-full min-h-screen '>
+    <div data-scroll-container  className='w-full min-h-screen relative'>
       <NavBar />
       <LandingPage />
       <Marquee />

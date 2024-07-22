@@ -1,12 +1,18 @@
 import React from "react";
+import TextHover from "../textAnimations/TextHover";
 
 const About = () => {
   return (
-    <div data-scroll data-scroll-section className="w-full py-10 bg-[#CDEA68] rounded-t-3xl font-NewMontreal">
+    <div
+      data-scroll
+      data-scroll-position="start,end"
+      data-scroll-speed="0.4"
+      className="w-full py-10 bg-[#CDEA68] rounded-t-3xl font-NewMontreal"
+    >
       <h1 className=" px-[3.25rem] text-[3.5vw] leading-none py-14">
         Ochi is a strategic partner for fast-growing tech <br /> businesses that
-        need to raise funds, sell products, <br /> explain complex ideas, and
-        hire great people.
+        need to <TextHover text={"raise funds"} />, sell products, <br />{" "}
+        explain complex ideas, and hire great people.
       </h1>
       <div className="w-full pt-5 pb-28 flex border-y border-[#9eb454] px-[3.25rem] text-[1.15vw]">
         <div className="w-1/2">
